@@ -15,10 +15,10 @@
         <div class="container mx-auto px-4 flex flex-col md:flex-row items-center justify-between px-4 py-6">
             <ul class="flex flex-col md:flex-row items-center">
                 <li>
-                    <a href="#"><span><i class="fa-solid fa-film mx-3"></i>Movie App</span></a>
+                    <a href="{{route('home')}}"><span><i class="fa-solid fa-film mx-3"></i>Movie App</span></a>
                 </li>
                 <li class="md:ml-16 mt-3 md:mt-0">
-                    <a href="#" class="hover:text-gray-300">Movies</a>
+                    <a href="{{route('home')}}" class="hover:text-gray-300">Movies</a>
                 </li>
                 <li class="md:ml-6 mt-3 md:mt-0">
                     <a href="#" class="hover:text-gray-300">TV shows</a>
