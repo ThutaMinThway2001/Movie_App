@@ -8,6 +8,7 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <livewire:styles />
     <script src="https://kit.fontawesome.com/4bf9b46335.js" crossorigin="anonymous"></script>
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
     <title>Movie App</title>
 </head>
 
