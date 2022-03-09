@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <livewire:styles />
     <script src="https://kit.fontawesome.com/4bf9b46335.js" crossorigin="anonymous"></script>
     <title>Movie App</title>
 </head>
@@ -28,14 +29,7 @@
                 </li>
             </ul>
             <div class="flex flex-col md:flex-row items-center">
-                <div class="relative mt-3 md:mt-0">
-                    <input type="text"
-                        class="bg-gray-800 rounded-full text-sm w-64 px-4 py-1 pl-8 focus:outline-none focus:shadow-outline"
-                        placeholder="Search">
-                    <div class="absolute top-0">
-                        <span><i class="fa-solid fa-magnifying-glass w-4 text-gray-500 mt-1 ml-2"></i></span>
-                    </div>
-                </div>
+                @livewire('search-dropdown')
                 <div class="md:ml-4 mt-3 md:mt-0">
                     <img src="/img/avatar.jpg" alt="avater" class="rounded-full w-8 h-8">
                 </div>
@@ -43,6 +37,7 @@
         </div>
     </nav>
     {{$slot}}
+    <livewire:scripts />
 </body>
 
 </html>
